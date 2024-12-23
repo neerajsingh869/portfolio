@@ -402,10 +402,11 @@ section {
 
 .project-cover-container img {
   width: 90%;
-  height: 90%;
+  height: 15rem;
   transition: all 0.2s ease-in-out;
   border-radius: 2rem;
   cursor: pointer;
+  object-fit: cover;
 }
 
 .project-cover-container img:hover {
