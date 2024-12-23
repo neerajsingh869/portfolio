@@ -40,6 +40,7 @@
 
   section {
     margin: 0 2rem;
+    height: auto;
   }
 
   #about {
@@ -48,6 +49,8 @@
 
   #hero {
     display: block;
+    height: auto;
+    padding-bottom: 2rem;
   }
 
   .hero-pic-container {
@@ -156,18 +159,10 @@
   .details-container {
     padding-inline: 0.5rem;
   }
-
-  #skills {
-    height: 120vh;
-  }
 }
 
 @media screen and (max-width: 430px) {
   .skills-container {
     grid-template-rows: repeat(2, 760px);
-  }
-
-  #skills {
-    height: 190vh;
   }
 }
