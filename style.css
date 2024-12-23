@@ -336,7 +336,7 @@ section {
   width: 100%;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  grid-template-rows: repeat(1, 460px);
+  grid-template-rows: repeat(1, 470px);
 }
 
 .details-container {
