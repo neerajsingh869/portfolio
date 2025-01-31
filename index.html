@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <title>Neeraj Singh</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Neeraj Singh</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <img
+            id="modeToggle"
+            src-dark="./assets/light.png"
+            src-light="./assets/dark.png"
+            src="./assets/light.png"
+            alt="Dark/Light Mode"
+            class="icon color-icon"
+          />
+        </li>
+      </ul>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Neeraj Singh</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onClick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onClick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onClick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onClick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onClick="toggleMenu()">Contact</a></li>
+          <li>
+            <img
+              id="modeToggle2"
+              src-dark="./assets/light.png"
+              src-light="./assets/dark.png"
+              src="./assets/light.png"
+              alt="Dark/Light Mode"
+              class="icon color-icon"
+            />
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- hero section -->
+      <section id="hero" class="element-center">
+        <div class="hero-pic-container">
+          <img src="./assets/me.jpg" alt="Neeraj Singh Profile Picture" />
+        </div>
+        <div class="hero-content-container section-text">
+          <p class="section-text-p1">Hello, I'm</p>
+          <h1 class="title">Neeraj Singh</h1>
+          <p class="section-text-p2">Fullstack Developer</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./assets/Neeraj%20Singh.pdf')"
+            >
+              Resume
+            </button>
+            <button class="btn btn-color-1" onClick="location.href='/#contact'">
+              Contact
+            </button>
+          </div>
+          <div class="socials-container">
+            <a
+              href="https://www.linkedin.com/in/neerajsingh869"
+              target="_blank"
+            >
+              <img
+                src="./assets/linkedin-dark.png"
+                src-dark="./assets/linkedin-dark.png"
+                src-light="./assets/linkedin-light.png"
+                alt="My Linkedin Profile"
+                class="icon linkedin-icon"
+              />
+            </a>
+            <a href="https://github.com/neerajsingh869" target="_blank">
+              <img
+                src="./assets/github-dark.png"
+                src-dark="./assets/github-dark.png"
+                src-light="./assets/github-light.png"
+                alt="My Github Profile"
+                class="icon github-icon"
+              />
+            </a>
+            <a href="https://twitter.com/neeraj_techwhiz" target="_blank">
+              <img
+                src="./assets/twitter-dark.png"
+                src-dark="./assets/twitter-dark.png"
+                src-light="./assets/twitter-light.png"
+                alt="My Twitter Profile"
+                class="icon twitter-icon"
+              />
+            </a>
+            <a href="https://www.instagram.com/neeraj_techwhiz" target="_blank">
+              <img
+                src="./assets/instagram-dark.png"
+                src-dark="./assets/instagram-dark.png"
+                src-light="./assets/instagram-light.png"
+                alt="My Instagram Profile"
+                class="icon instagram-icon"
+              />
+            </a>
+          </div>
+        </div>
+        <a href="#about">
+          <img
+            src="./assets/arrow-dark.png"
+            src-dark="./assets/arrow-dark.png"
+            src-light="./assets/arrow-light.png"
+            alt="Arrow Icon"
+            class="icon arrow"
+          />
+        </a>
+      </section>
+
+      <!-- about me section -->
+      <section id="about" class="element-center flex-column">
+        <p class="section-text-p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-text about-text">
+          <p class="section-text-p3">
+            I am Neeraj Singh, a Frontend Developer at Genpact specializing in
+            Angular development for enterprise clients. My expertise spans HTML,
+            CSS, and modern JavaScript frameworks including Angular and React,
+            complemented by strong foundations in TypeScript and MERN stack
+            development. Dedicated to continuous improvement through daily Data
+            Structures and Algorithms practice, I'm currently expanding my
+            knowledge in frontend system design while implementing
+            industry-standard testing practices with Vitest and React Testing
+            Library. As an ambitious developer progressing from frontend mastery
+            to full-stack excellence, I'm particularly excited about AI's
+            potential in software development. My dedication to continuous
+            learning and systematic problem-solving approach drives my journey
+            to become a skilled full-stack developer, starting with mastering
+            frontend development fundamentals.
+          </p>
+        </div>
+        <a href="#skills">
+          <img
+            src="./assets/arrow-dark.png"
+            src-dark="./assets/arrow-dark.png"
+            src-light="./assets/arrow-light.png"
+            alt="Arrow Icon"
+            class="icon arrow"
+          />
+        </a>
+      </section>
+
+      <!-- skills section -->
+      <section id="skills" class="element-center flex-column">
+        <p class="section-text-p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="skills-container">
+          <div class="details-container">
+            <h2 class="details-title">Frontend Development</h2>
+            <div class="articles-container">
+              <article>
+                <img src="./assets/html.png" alt="HTML Logo" class="icon" />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/css.png" alt="CSS Logo" class="icon" />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/tailwind.png"
+                  alt="Tailwind CSS Logo"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tailwind CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/bootstrap.png"
+                  alt="Bootstrap Logo"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bootstrap</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/javascript.png"
+                  alt="JavaScript Logo"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/typescript.png"
+                  alt="TypeScript Logo"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/react.png" alt="React Logo" class="icon" />
+                <div>
+                  <h3>React</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/angular.png"
+                  alt="Angular Logo"
+                  class="icon"
+                />
+                <div>
+                  <h3>Angular</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="details-title">Backend Development</h2>
+            <div class="articles-container">
+              <article>
+                <img src="./assets/java.png" alt="Java Logo" class="icon" />
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/nodejs.png"
+                  alt="Node JS Logo"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/expressjs-dark.png"
+                  src-dark="./assets/expressjs-dark.png"
+                  src-light="./assets/expressjs-light.png"
+                  alt="Express JS Logo"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/mongodb.png"
+                  alt="Mongodb Logo"
+                  class="icon"
+                />
+                <div>
+                  <h3>Mongodb</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/mysql.png" alt="MySQL Logo" class="icon" />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/git.png" alt="Git Logo" class="icon" />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <a href="#projects">
+          <img
+            src="./assets/arrow-dark.png"
+            src-dark="./assets/arrow-dark.png"
+            src-light="./assets/arrow-light.png"
+            alt="Arrow Icon"
+            class="icon arrow"
+          />
+        </a>
+      </section>
+
+      <!-- projects section -->
+      <section id="projects" class="element-center flex-column">
+        <p class="section-text-p1">Browser My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="projects-container">
+          <div class="project-container">
+            <div class="project-cover-container">
+              <a href="https://foodie.neerajsingh.dev/" target="_blank">
+                <img src="./assets/foodie_cover.png" alt="Foodie Cover" />
+              </a>
+            </div>
+            <h2 class="project-title">Foodie</h2>
+            <div class="btn-container">
+              <a
+                href="https://github.com/neerajsingh869/foodie-frontend"
+                target="_blank"
+              >
+                <button class="btn btn-color-2">Github</button>
+              </a>
+              <a href="https://foodie.neerajsingh.dev/" target="_blank">
+                <button class="btn btn-color-2">Live Demo</button>
+              </a>
+            </div>
+          </div>
+          <div class="project-container">
+            <div class="project-cover-container">
+              <a href="https://buybusy.neerajsingh.dev/" target="_blank">
+                <img src="./assets/buybusy_cover.png" alt="Buy Busy Cover" />
+              </a>
+            </div>
+            <h2 class="project-title">Buy Busy</h2>
+            <div class="btn-container">
+              <a
+                href="https://github.com/neerajsingh869/buybusy"
+                target="_blank"
+              >
+                <button class="btn btn-color-2">Github</button>
+              </a>
+              <a href="https://buybusy.neerajsingh.dev/" target="_blank">
+                <button class="btn btn-color-2">Live Demo</button>
+              </a>
+            </div>
+          </div>
+          <div class="project-container">
+            <div class="project-cover-container">
+              <a href="https://netflix.neerajsingh.dev/" target="_blank">
+                <img src="./assets/netflix_cover.png" alt="Netflix Cover" />
+              </a>
+            </div>
+            <h2 class="project-title">Netflix</h2>
+            <div class="btn-container">
+              <a
+                href="https://github.com/neerajsingh869/netflix"
+                target="_blank"
+              >
+                <button class="btn btn-color-2">Github</button>
+              </a>
+              <a href="https://netflix869.neerajsingh.dev/" target="_blank">
+                <button class="btn btn-color-2">Live Demo</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="#contact">
+          <img
+            src="./assets/arrow-dark.png"
+            src-dark="./assets/arrow-dark.png"
+            src-light="./assets/arrow-light.png"
+            alt="Arrow Icon"
+            class="icon arrow"
+          />
+        </a>
+      </section>
+
+      <!-- contact section -->
+      <section id="contact" class="element-center flex-column">
+        <p class="section-text-p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="socials-container contacts-info-container">
+          <a href="https://www.linkedin.com/in/neerajsingh869" target="_blank">
+            <img
+              src="./assets/linkedin-dark.png"
+              src-dark="./assets/linkedin-dark.png"
+              src-light="./assets/linkedin-light.png"
+              alt="My Linkedin Profile"
+              class="icon linkedin-icon"
+            />
+          </a>
+          <a href="https://github.com/neerajsingh869" target="_blank">
+            <img
+              src="./assets/github-dark.png"
+              src-dark="./assets/github-dark.png"
+              src-light="./assets/github-light.png"
+              alt="My Github Profile"
+              class="icon github-icon"
+            />
+          </a>
+          <a href="https://twitter.com/neeraj_techwhiz" target="_blank">
+            <img
+              src="./assets/twitter-dark.png"
+              src-dark="./assets/twitter-dark.png"
+              src-light="./assets/twitter-light.png"
+              alt="My Twitter Profile"
+              class="icon twitter-icon"
+            />
+          </a>
+          <a href="https://www.instagram.com/neeraj_techwhiz" target="_blank">
+            <img
+              src="./assets/instagram-dark.png"
+              src-dark="./assets/instagram-dark.png"
+              src-light="./assets/instagram-light.png"
+              alt="My Instagram Profile"
+              class="icon instagram-icon"
+            />
+          </a>
+          <a href="mailto:neeraj.techwhiz@gmail.com">
+            <img
+              src="./assets/email-dark.png"
+              src-dark="./assets/email-dark.png"
+              src-light="./assets/email-light.png"
+              alt="My Email"
+              class="icon"
+            />
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <p>
+        Made with <span style="color: red; font-size: 1.25rem">&hearts;</span>
+        by Neeraj
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
